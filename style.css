@@ -1,0 +1,23 @@
+/* LIGHT MODE - WHITE */
+body:not(.dark-mode) .bottom button {
+  background: #ffffff !important;
+  color: #333333 !important;
+  border: 1px solid #eeeeee !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* DARK MODE - FOLLOW SUBJECT BUTTON THEME */
+body.dark-mode .bottom button {
+  background: var(--subject-bg, transparent) !important;
+  color: var(--subject-text, inherit) !important;
+  border: 1px solid var(--subject-border, currentColor) !important;
+  box-shadow: var(--subject-glow, none) !important;
+  text-shadow: none !important;
+}
+
+/* KEEP ONLY THE HERO TITLE */
+#homePage .hero p,
+#homePage .hero strong {
+  display: none !important;
+}
